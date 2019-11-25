@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Blog de receitas">
+  <meta name="keywords" content="HTML, CSS, JAVASCRIPT">
+  <meta name="author" content="Débora">
+
+  <title>Document</title>
+
+  <style>
+    *
+    {
+        padding: 0%;
+        margin: 0%;
+    }
+
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: right;
+    }
+
+    ul li {
+      display: inline;
+      padding:0.5%;
+      white-space: nowrap;
+    }
+
+    .meucarosel {
+      width: 100% !important;
+      height: 450px !important;
+      background-color: blue;
+    }
+
+    .imagecarosel {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+    }
+
+    .cartaolinha1 {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      margin: 30px;
+    }
+
+    .card {
+      margin: 3%;
+      vertical-align: bottom;
+
+    }
+
+    .navbar {
+      display: float: left;
+      background-color: #E0D2C5 ;
+    }
+
+    .cor {
+      background-color:#E0D2C5;
+    }
+  
+    .footer {
+      position: static;
+      left: 0;
+      bottom: 0%;
+      width: 100%;
+      background-color: rgb(223, 191, 153);
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+    .button1 {
+      background-color: white;
+      color: black;
+      border: 2px solid #4CAF50; 
+}
+  </style>
+
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+
+<body>
+
+  <div class="cor" > <ul style="list-style: none">
+    <nav class="navbar navbar-expand-lg navbar-light  container"; style="background-color: #E0D2C5">
+      <a class="navbar-brand" href="#">Inicio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Receitas Doces <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Receitas Salgadas <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Receitas Saudáveis <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="3"> Cadastro <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" >
+          <input class="form-control mr-sm-2" type="search" placeholder="Search">
+          <button type="button" class="btn btn-outline-dark">Procurar </button>
+         
+        </form>
+      </div>
+    </nav>
+
+    </ul>
+
+    <div class="meucarosel">
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://i.pinimg.com/originals/9f/35/1a/9f351ab38c472d32703058939a5dee06.jpg" class="imagecarosel"
+              alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://img.itdg.com.br/tdg/images/blog/uploads/2019/05/receitas-com-chocolate-branco.jpg"
+              class="imagecarosel" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://essencialmais.com.br/wp-content/uploads/2017/07/Fotolia_115337568_Subscription_Monthly_M-1080x675.jpg"
+              class="imagecarosel" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="cartaolinha1">
+
+        <div class="card" style="width: 18rem;">
+          <img src="https://divinacocina.com.br/wp-content/uploads/2017/04/Receita-de-Espaguete-%C3%A0-Carbonara-Divina-Cocina.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">MACARRÃO À CARBONARA!</h5>
+            <p class="card-text">Bacon, ovos e queijo: uma combinação perfeita. Confira o passo a passo desse macarrão à carbonara e delicie-se com essa maravilha...</p>
+            <button type="button" class="btn btn-dark">Receita Completa</button>
+            
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img src="https://img.itdg.com.br/tdg/images/recipes/000/049/802/297847/297847_original.jpg?mode=crop&width=710&height=400"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">BOMBOM DE TRAVESSA</h5>
+            <p class="card-text">Aprenda a fazer uma deliciosa sobremesa, super simples de fazer... </p>
+            <button type="button" class="btn btn-dark">Receita Completa</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="https://img.itdg.com.br/tdg/images/recipes/000/183/579/245738/245738_original.jpg?mode=crop&width=710&height=400" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">OMELETE FIT</h5>
+            <p class="card-text">Receita super pratica e simples, faça uma deliciosa refeição saudavel... </p>
+            <button type="button" class="btn btn-dark">Receita Completa</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cartaolinha1">
+
+        <div class="card" style="width: 18rem;">
+          <img src="https://portal-amb-imgs.clubedaana.com.br/2018/11/shutterstock_246255652-1920x1080.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">TORTA CROCANTE</h5>
+            <p class="card-text">Uma deliciosa opção para lanche...</p>
+            <button type="button" class="btn btn-dark">Receita Completa</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="https://www.receiteria.com.br/wp-content/uploads/receitas-com-morango-1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">TORTA DE CHOCOLATE </h5>
+            <p class="card-text">Uma ótima opção para dias quente, uma saborosa torta gelada de chocolate com morangos...</p>
+              <button type="button" class="btn btn-dark">Receita Completa</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="https://statig3.akamaized.net/bancodeimagens/29/xu/ru/29xurufyqh6w86ajuoxqreehj.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">COXINHA FIT</h5>
+            <p class="card-text">Coxinha é uma delicia, melhor ainda quando ela ganha um versão fitness... </p>
+              <button type="button" class="btn btn-dark">Receita Completa</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+</body>
+
+
+<footer class="page-footer font-small blue pt-4">
+
+  
+    <div class="container-fluid text-center text-md-left">
+  
+     
+      <div class="row">
+  
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+      
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+        
+  
+    </div>
+    
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> 
+        
+    </div>
+   
+  
+  </footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>
